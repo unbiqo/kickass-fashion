@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fits — The Ultimate Outfit Builder</title>
+    <link rel="stylesheet" href="landing.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Fits</div>
+        <a href="#waitlist" class="nav-cta">Request Access</a>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Public Beta Opening Soon</span>
+                <h1>Stop buying clothes.<br>Start building looks.</h1>
+                <p class="subhead">
+                    The interactive canvas for your wardrobe. Upload your own items, visualize matches from 500+ brands, and shop the missing piece to complete the look.
+                </p>
+                
+                <form id="waitlist-form" class="waitlist-form">
+                    <input type="email" id="email" name="email" placeholder="enter your email address" required>
+                    
+                    <input type="hidden" name="utm_source" id="utm_source" value="">
+                    <input type="hidden" name="utm_medium" id="utm_medium" value="">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+                    
+                    <button type="submit">Request Access</button>
+                </form>
+                <div id="success-message" style="display:none; color:#10b981; font-weight:500; margin-top:1rem;">
+                    ✓ You're on the list! We'll notify you when beta opens.
+                </div>
+                <p class="micro-copy">Compatible with SSENSE, Farfetch, ASOS, and more.</p>
+            </div>
+
+            <div class="hero-visual">
+                <div class="browser-window">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline poster="assets/poster.jpg">
+                            <source src="assets/AI_Styling_App_Commercial_Script.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Online Shopping Fails Us</h2>
+                <p>E-commerce hasn't changed in 20 years. It's just a list of products. But you don't wear products; you wear outfits.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon">🧠</div>
+                    <h3>The Imagination Gap</h3>
+                    <p>It’s impossible to know if a jacket matches your jeans just by looking at separate browser tabs. You need to see them together.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧶</div>
+                    <h3>Orphan Items</h3>
+                    <p>We all own clothes we never wear simply because we can't find the right pairing. They sit in the closet gathering dust.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📦</div>
+                    <h3>Return Fatigue</h3>
+                    <p>Buying items that don't fit your style leads to wasted money and the hassle of printing return labels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visualize Your Style with Fits</h2>
+            </div>
+            
+            <div class="feature-row">
+                <div class="feature-text">
+                    <span class="step">01</span>
+                    <h3>Digitize Your Closet</h3>
+                    <p>Upload a photo of that "orphan item" you never wear. Our AI instantly removes the background so it's ready to style.</p>
+                </div>
+                <div class="feature-visual">
+                    <div class="visual-card">
+                        <div class="upload-icon">↑</div>
+                        <span>Background Removed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <span class="step">02</span>
+                    <h3>The Infinite Canvas</h3>
+                    <p>Drag and drop items onto the interactive board. Layer, resize, and arrange clothes to visualize the perfect outfit.</p>
+                </div>
+                <div class="feature-visual">
+                    <div class="visual-card canvas-preview">
+                        <div class="mini-item"><img src='assets/coat.png' alt="Coat"></div>
+                        <div class="mini-item"><img src='assets/pants.png' alt="Pants"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-text">
+                    <span class="step">03</span>
+                    <h3>Shop the Missing Piece</h3>
+                    <p>Need shoes to match those pants? Search our database, drag them onto your canvas, and see exactly how they look. <strong>If it fits, shop it instantly.</strong></p>
+                </div>
+                <div class="feature-visual">
+                    <div class="visual-card shop-preview">
+                        <div class="buy-btn">Buy Match $120</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-footer" id="waitlist">
+        <div class="container">
+            <h2>Ready to unlock your wardrobe?</h2>
+            <p>Get early access to the canvas and start building.</p>
+            <br>
+            <button onclick="document.getElementById('email').focus()" class="btn-large">Request Access</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <strong>Fits</strong>
+                <p>The next-generation outfit planning tool.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:hello@fits-app.com">Partner Inquiry</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            &copy; 2025 Fits. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="landing.js?v=3"></script>
+</body>
+</html>
